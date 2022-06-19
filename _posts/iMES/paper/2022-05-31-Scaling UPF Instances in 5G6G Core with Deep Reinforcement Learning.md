@@ -213,8 +213,7 @@ math: true
     \end{cases}
     $$
 
-    - $ \hat{p}_{b, i} $
-	  - 이전 결정 $\[ T_{i-1}, T )$ 이후 측정된 차단율
+    - $ \hat{p} _ {b, i} $ : 이전 결정 $ \[ T _ {i-1}, T ) $ 이후 측정된 차단율
     - $p_{b, th}$ : 초과하면 안되는 QoS level의 차단율 임계값
     - $\kappa$ : blocking 속도를 scaling하는 coefficient scaler 값
     - 목적 : 측정된 차단 속도가 임계값을 <u>초과하면 차단 속도를 최소화해야한다</u>
@@ -251,25 +250,30 @@ math: true
       - $\theta$ : 매개 변수 vector
 
       - 크기 $N_{\text{batch}} + 1$의 벡터 $A_{\text{AGE}}$에서 a batch of advantages를 고려하면, 벡터의 j번째 요소는 아래와 같이 계산 가능
+	  
         $$
         \begin{equation*} \hat {A}_{\text {GAE}, j} = \sum _{l=0}^{N_{\text {batch}-j-1}}\lambda _{\text {GAE}}^{l}\delta _{j+l} \quad j=0,1,\ldots, N_{\text {batch}}\end{equation*}
         $$
 
       - $A_{\text{AGE}}$ : 암시적으로 포함하는 가중치 hyperparameter $\gamma$를 포함
 
-      - $\delta_{j}$ : batch $\delta$의 시간차 오차의 j번째 요소  
-        $$
-		\begin{equation*} \delta_{j} = \text{TD}_{\text{target}, j} - V(s_{j}, \boldsymbol \omega) \end{equation*}
-		$$
+      - $\delta_{j}$ : batch $\delta$의 시간차 오차의 j번째 요소
+	  
+          $$
+		  \begin{equation*} \delta_{j} = \text{TD}_{\text{target}, j} - V(s_{j}, \boldsymbol \omega) \end{equation*}
+		  $$
+		  
 		  - j번째 시간차 목표 $\text{TD}_{\text{target}, j}$
-      $$
-        \text {TD}_{\text {target}, j} = r_{j} - \tilde {r} + V(s_{j}', \boldsymbol \omega)
-		$$
+            
+			$$
+            \text {TD}_{\text {target}, j} = r_{j} - \tilde {r} + V(s_{j}', \boldsymbol \omega)
+		    $$
 		  
 		    - 이 식에서는 평균 보상 체계 $\tilde r$를 사용했음 ( soft update를 통해 추적하는 평균 reward )
-      $$
-      	\tilde {r}\leftarrow (1-\alpha _{R})\tilde {r} + \alpha _{R}\sum _{j=0}^{ N_{\text {batch}}- 1} r_{j} / N_{\text {batch}}
-			$$
+			
+              $$
+      	      \tilde {r}\leftarrow (1-\alpha _{R})\tilde {r} + \alpha _{R}\sum _{j=0}^{ N_{\text {batch}}- 1} r_{j} / N_{\text {batch}}
+			  $$
 			
 			  - $\alpha_{\text{R}}$ : update rate hyperparameter
     
@@ -278,8 +282,9 @@ math: true
 - advantage와 $\text{TD}_{\text{target}}$ 사용 목적 : policy를 평가하는 것
       
   - 알고리즘은 작동 중에 반복적으로 $\theta, \omega$를 업데이트 -> 정책 개선 시도
-      $$
-          \begin{align*} \boldsymbol \omega\leftarrow&\boldsymbol \omega + \alpha _{\omega } \textbf {T}\textbf {D}_{\text {target}}\odot \nabla _{\omega }V(\mathbf {s}, \boldsymbol \omega) \\ \boldsymbol \theta\leftarrow&\boldsymbol \theta + \alpha _{\theta }\nabla _\theta \min \{\mathbf {r_{t}}(\boldsymbol \theta)\odot \hat {\textbf {A}}_{\text {GAE}}, \\&\text {clip}(\mathbf {r_{t}}(\boldsymbol \theta), 1-\varepsilon, 1+\varepsilon)\odot \hat {\textbf {A}}_{\text {GAE}}\} \\&+\, \xi H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)).\end{align*}
+      
+	  $$
+      \begin{align*} \boldsymbol \omega\leftarrow&\boldsymbol \omega + \alpha _{\omega } \textbf {T}\textbf {D}_{\text {target}}\odot \nabla _{\omega }V(\mathbf {s}, \boldsymbol \omega) \\ \boldsymbol \theta\leftarrow&\boldsymbol \theta + \alpha _{\theta }\nabla _\theta \min \{\mathbf {r_{t}}(\boldsymbol \theta)\odot \hat {\textbf {A}}_{\text {GAE}}, \\&\text {clip}(\mathbf {r_{t}}(\boldsymbol \theta), 1-\varepsilon, 1+\varepsilon)\odot \hat {\textbf {A}}_{\text {GAE}}\} \\&+\, \xi H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)).\end{align*}
       $$
       
     - $\alpha_{\omega}, \alpha_{\theta}$ : gradient descent step에서의 learning rate
@@ -297,9 +302,10 @@ math: true
           - $\odot$ : 원소적 곱 기호 ( 아다마르 곱 )
   
 - entropy 정규화 추가
-        $$
-        \begin{equation*} H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)) = -\sum _{a'\in \mathcal {A}}\pi (a' | \mathbf {s}, \boldsymbol \theta)\log {\pi (a' | \mathbf {s}, \boldsymbol \theta)}\end{equation*}
-        $$
+
+  $$
+  \begin{equation*} H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)) = -\sum _{a'\in \mathcal {A}}\pi (a' | \mathbf {s}, \boldsymbol \theta)\log {\pi (a' | \mathbf {s}, \boldsymbol \theta)}\end{equation*}
+  $$
     
   - weight : $\xi$
   
@@ -445,6 +451,7 @@ math: true
   - label이 올바르면 분기선에 영향을 주지 않지만, 잘못 표시된 경우 **결정 경계를 원하지 않은 방향으로 이동시킴**
 
     - outlier를 제거하여 dataset을 정리하는 <u>classifier가 필요함</u>
+	
       $$
       \begin{equation*} | d_{\text {on}}/ D_{\text {max}}- \hat {\lambda }/ \hat {\lambda }_{\mathrm {max}}| > 0.4\end{equation*}
       $$
@@ -466,6 +473,7 @@ math: true
   - $\mathbf w, w_0$ : SVM의 hyperparameter
 
   - 위 식은 우리에게 분류 규칙을 줄 수 있음
+  
     $$
     \begin{equation*} \tilde {a}_{i} = {\mathrm {sign}}(\mathbf {w}^{T} s_{i} + w_{0})\end{equation*}
     $$
@@ -479,6 +487,7 @@ math: true
         - data가 분리 가능한 경우 : +1과 -1로 표시된 동작을 분리할 수 있는 평면이 존재한다면
 
           - 최적화 문제를 아래와 같이 표현 가능
+		  
             $$
             \begin{align*}&\min _{\mathbf {w}, w_{0}} \quad \lVert \mathbf {w} \rVert \\&{\mathrm {subject~ to}} \quad \tilde {a}_{i}(\mathbf {w}^{T} s_{i} + w_{0}) \geq 1, i = 1, 2, \ldots, N_{\mathrm {data}} \\\end{align*}
             $$
@@ -486,13 +495,14 @@ math: true
         - dataset에 중복이 포함되어있고 분리할 수 없는 경우 : 훈련 set에서 **가장 적은 양의 point가 잘못 분류되도록 하는 초평면을 찾아야함**
 
           - slack 변수 $\zeta_{i}$를 추가하여 최적화 문제 수정
+		  
             $$
             \begin{align*}&\min _{\mathbf {w}, w_{0}} \quad \lVert \mathbf {w} \rVert \\&{\mathrm {subject ~to}} \quad \tilde {a}_{i}(\mathbf {w}^{T} s_{i} + w_{0}) \geq 1- \zeta _{i} \\&\hphantom {subject to \quad } \zeta _{i} \geq 0, \sum \zeta _{i} \leq C, i \!=\! 1, 2, \ldots, N_{\mathrm {data}} \\\end{align*}
             $$
 
           - $C$ : SVM의 hyperparameter
 
-            - $C$가 작을수록 더 많은 point가 잘못 분류될 수 있음 -> 마진이 높아짐
+            - $C$가 작을수록 더 많은 point가 잘못 분류될 수 있음 -> margin이 높아짐
 
 - 알고리즘 3 : SVM 모델을 훈련시키는 절차를 나타냄
 
@@ -522,13 +532,13 @@ math: true
   i ← 0
   for Ndata steps do
   	Evaluate DRL agent on state Lstates[i] to get action.
-  	Append action to Lacts .
+  	Append action to Lacts.
   	i ← i + 1
   end for
   Remove outlier points according to (12).
   Separate lists into train and test sets: Lstates → Ltrainstates, Lteststates; Lacts → Ltrainacts, Ltestacts.
   w, w0 ← Train SVM using Ltrainstates as features and Ltrainacts as labels and run a grid search on hyperparameter C.
-  Get accuracy of the model using Lteststates and Ltestacts .
+  Get accuracy of the model using Lteststates and Ltestacts.
   return w, w0, accuracy
   ```
 
@@ -577,6 +587,7 @@ math: true
     - training은 필요하겠지만, cold start까지는 할 이유가 없음
 
 - 각 시뮬레이션 단계에서 도착률을 아래와 같이 계산하고 DRL agent를 훈련시킴
+
   $$
   \begin{aligned}
   \lambda_{\text{train}}(t) = & \text{ } 250 + 250 \sin(\frac{\pi}{6}t) \\
@@ -598,7 +609,7 @@ math: true
 
 ### A. Scenarios
 
-- 수치적 평가를 위한가정
+- 수치적 평가를 위한 가정
 
   - UPF instance는 Intel Xeon 6238R 28 core 2.2GHZ 프로세서와 4x64 GB RAM을 갖춘 physical server에서 실행됨
   - 각 UPF 세션은 video 스트리밍 data를 전달하는 것임
@@ -638,7 +649,7 @@ math: true
 
   - 결과값은 8번의 결과의 평균치임
   - %는 HPA와 비교하였을 때의 성능 증가량
-  - **차단 속도 임계값 0.001 이하로 유지중인 것을 알 수 있음**
+  - **차단 속도 임계값 0.01 이하로 유지중인 것을 알 수 있음**
   - 낮은 $t_{\text{pend}}$ 값에서 DRL agent가 더 적은 수의 pod를 유지하는 것을 알 수 있음
     - pod 시작하는 시간이 오래 걸리면 agent가 idle pod를 많이 종료시킬 수가 없기 때문
 
