@@ -205,7 +205,7 @@ math: true
 
     - 아무런 행동을 취하지 않음 `no action`
 
-  - 보상함수 $r_{i}$
+  - 보상함수 
     $$
     r_{i} = \begin{cases}
     -\kappa \hat{p}_{b, i} & \text{if } \hat{p}_{b, i} > p_{b, th} \\
@@ -215,7 +215,7 @@ math: true
 
     - $ \hat{p} _ {b, i} $ : 이전 결정 $ \[ T _ {i-1}, T ) $ 이후 측정된 차단율
     - $p_{b, th}$ : 초과하면 안되는 QoS level의 차단율 임계값
-    - $\kappa$ : blocking 속도를 scaling하는 coefficient scaler 값
+    - $\kappa$ : blocking 속도를 scaling하는 coefficient scalar 값
     - 목적 : 측정된 차단 속도가 임계값을 <u>초과하면 차단 속도를 최소화해야한다</u>
       - 임계값을 <u>초과하지 않는다면 pod 수를 최소화한다</u>
 
@@ -224,7 +224,7 @@ math: true
   - 강화학습 : 환경과 상호작용하기 위해 agent를 적용하는 방법
 
     - 시스템 상태 관찰 / 후속 작업의 결과에 reward 적용
-    - 적용하기 위해 state 정보가 필요 ( 활성 / 부팅중은 UPF pod의 수, 시스템 내의 PDU 세션 수, arrival rate의 근사값 등 )
+    - 적용하기 위해 state 정보가 필요 ( 활성 / 부팅중인 UPF pod의 수, 시스템 내의 PDU 세션 수, arrival rate의 근사값 등 )
       - 얻는 방법 : 5G core의 SMF & AMF 기능 모니터링 or SMF & AMF의 기능 자체
 
   - agent : 2개의 scaling action 사이에 관측치를 이용하여 policy 업데이트 / 개선
@@ -397,7 +397,7 @@ math: true
   
 - DRL agent를 훈련하기 위한 hyperparameter 검색을 수행
 
-  - 가장 민감한 hyperparameter : reward multiplier $\kappa$, entropy 정규화 factor $\xi$
+  - 가장 민감한 hyperparameter : reward multiplier $\kappa$, entropy regularization factor $\xi$
 
   - 수행 방법 : gridsearch 방식
 
@@ -461,7 +461,7 @@ math: true
 
 - DRL agent를 이용하여 state와 그에 대응하는 action에 대한 label 작업을 거침
 
-  - 만들어진 $N_{\text{data}}$ 크기의 ataset을 이용하여 선형 SVM 분류기를 생성함
+  - 만들어진 $N_{\text{data}}$ 크기의 dataset을 이용하여 선형 SVM 분류기를 생성함
   - Linear SVM : 두 class 사이의 dataset에서 분리 평면을 찾는 기계학습 방법
     - 다만 이 상황에서는 3개의 action ( `start`, `terminate`, `no action` ) 이 있으므로, multiclass 분류기가 필요함
     - One-versus-Rest 전략 : 각 행동 유형에 대해 별도의 모델을 만들 수 있음
