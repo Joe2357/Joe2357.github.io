@@ -14,6 +14,7 @@ order: 4
   - iMES
   - paper
   - DS ( 자료구조 )
+  - Algorithm
   - review
   - SCPC
   - Storage
@@ -27,6 +28,7 @@ order: 4
     - Review/SCPC
   - Storage
     - Data Structure
+    - Algorithm
   - iMES
     - Review/paper
     - ADD
