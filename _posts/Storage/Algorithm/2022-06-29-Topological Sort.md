@@ -35,7 +35,7 @@ math: true
     void topologicalSort() {
     	for (int i = 1; i <= n; ++i) {
             
-            // 시작지점 찾기
+    		// 시작지점 찾기
     		if (deg[i] == 0) {
     			queue[rear++] = i;
     			visit[i] = true;
@@ -43,22 +43,22 @@ math: true
     		}
     	}
     
-        // 추가진행 탐색
+    	// 추가진행 탐색
     	while (front < rear) {
     		int a = queue[front++]; // 현재 정점
             
-            // 추가 진행 여부 탐색
+    		// 추가 진행 여부 탐색
     		for (int i = 1; i <= n; ++i) {
     			if (!visit[i] && matrix[a][i]) {
     				if (--deg[i] == 0) {
     					queue[rear++] = i;
     					visit[i] = true;
-                        order[len++] = i;
+    					order[len++] = i;
     				}
     			}
     		}
     	}
-        return;
+    	return;
     }
     ```
 
@@ -83,19 +83,19 @@ math: true
     			DFS(i);
     		}
     	}
-        return;
+    	return;
     }
     
     void DFS(int x) {
-        visit[x] = true;
-        for (int i = 1; i <= n; ++i) { // 추가탐색 진행
-            if (matrix[x][i] && !visit[i]) {
-                DFS(i);
-            }
-        }
+    	visit[x] = true;
+    	for (int i = 1; i <= n; ++i) { // 추가탐색 진행
+    		if (matrix[x][i] && !visit[i]) {
+    			DFS(i);
+    		}
+    	}
         
-        order_stack[top++] = x; // 최종 정점 입력
-        return;
+    	order_stack[top++] = x; // 최종 정점 입력
+    	return;
     }
     ```
 
