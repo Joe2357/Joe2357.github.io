@@ -128,10 +128,10 @@ math: true
 
 ### B. 5G Network Slice Requests
 
-- $nslr = \{ s_{type}, T_o, G \}$로 표현
+- $nslr = \lbrace { s_{type}, T_o, G } \rbrace$로 표현
   - $s_{type}$ : 5G usecase를 나타냄 ( eMBB / URLLC / mMTC )
   - $T_o$ : 요청된 작동 시간 ( slice의 지속시간 )
-  - $G = \{ F, V \}$ : 라벨링되고 가중치가 부여된 무방향 그래프 ( NSL 표현 )
+  - $G = \lbrace { F, V } \rbrace$ : 라벨링되고 가중치가 부여된 무방향 그래프 ( NSL 표현 )
     - $F$ : VNF의 집합
     - $V$ : VNF를 잇는 가상 link의 집합
   - node의 label : VNF가 요구하는 resource의 양 / type 을 제공
@@ -310,7 +310,6 @@ math: true
   Input : Sets of NSLRs (RS) collected during the time window
   Result : Admission of NSLRs that generate the maximum profit
   ```
-```
   
   ```procedure
   Initialize Q : Q(S, A) = 0, ∀s ∈ S, ∀a ∈ A
@@ -334,7 +333,7 @@ math: true
           The current state is updated st ← s(t+1)
       end
   end
-```
+  ```
 
 - 알고리즘 목표 : 가장 수익성이 높은 NSLR set을 수용하는 것
   
@@ -560,7 +559,7 @@ math: true
   
   ​	$M : G = \lbrace { F, V } \rbrace \rightarrow SN' = \lbrace { N', L' } \rbrace $
   
-  - $G = \{ F, V \}$ : 라벨링되고 가중치가 부여된 무방향 그래프 ( NSL 표현 )
+  - $G = \lbrace { F, V } \rbrace $ : 라벨링되고 가중치가 부여된 무방향 그래프 ( NSL 표현 )
   
     - $F$ : VNF의 집합
     - $V$ : VNF를 잇는 가상 link의 집합
