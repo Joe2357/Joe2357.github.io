@@ -120,10 +120,10 @@ math: true
     - eMBB : 광범위한 VNF 활성화 / core, edge node에 걸친 distribution 필요
     - URLLC : latency 요구사항을 지원하기 위해 edge측에 배치된 VNF 필요
     - mMTC : latency 요구사항이 크게 없으므로 core측에 배치 가능
-- <u>라벨링, 가중치를 부여한 **무방향 그래프**</u> $SN = \{ N, L \}$로 모델링함
-  - $N = \{ n_1, n_2, ..., n_m \}$ : node들의 집합
+- <u>라벨링, 가중치를 부여한 **무방향 그래프**</u> $SN = \lbrace { N, L } \rbrace$로 모델링함
+  - $N = \lbrace { n_1, n_2, ..., n_m } \rbrace$ : node들의 집합
     - 각 node들은 처리용량인 $CPU(n_i)$가 주어짐
-  - $L = \{ (n_1, n_2), (n_1, n_3), ..., (n_l, n_m) \}$ : link들의 집합
+  - $L = \lbrace { (n_1, n_2), (n_1, n_3), ..., (n_l, n_m) } \rbrace $ : link들의 집합
     - 각 link들은 bandwidth인 $BW(n_i, n_j)$가 주어짐
 
 ### B. 5G Network Slice Requests
@@ -403,7 +403,7 @@ math: true
 
   - 각 학습 step에서 최적의 수락 action을 학습하고, 안정성 달성
 
-- 이전의 DQN : 단일 NN을 사용하여 Q값 추정, Q값 타게팅 -> **추정치에서 높은 상관관계 발생** 
+- 이전의 DQN : 단일 NN을 사용하여 Q값 추정, Q값 타겟팅 -> **추정치에서 높은 상관관계 발생** 
 
   - DSARA : replay memory에 경험을 저장 $( s_t, a_t, s_{t+1}, R_t)$ // 평가 NN을 학습하기 위한 mini-batch을 사용하기 위함
 
@@ -575,7 +575,7 @@ math: true
   Algorithm 3
   RA Algorithm
   ---
-  Input : An NSLR, substrate resource abailability
+  Input : An NSLR, substrate resource availability
   Result : Mapped NSLR
   ```
 
