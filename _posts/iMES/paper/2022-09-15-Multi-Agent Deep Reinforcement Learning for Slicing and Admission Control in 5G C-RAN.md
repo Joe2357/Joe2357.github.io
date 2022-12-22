@@ -146,21 +146,20 @@ math: true
 	& G_5 = G_5^{ref} \cdot \frac{B}{B^{ref}} \cdot \frac{A}{A^{ref}},\tag{5}
 	\end{align*}
 	$$
-
-    - $G_1, G_2$ : $f_1$ (High-PHY) 에서의 하위 기능에 대한 computing resource 요구사항
+  - $G_1, G_2$ : $f_1$ (High-PHY) 에서의 하위 기능에 대한 computing resource 요구사항
     - $G_3, G_4, G_5$ : 각각 $f_2, f_3, f_4$에 대한 computing resource 요구사항
     - $B, A, L, M$ : 각각 bandwidth, MIMO 안테나 개수, load (부하), modulation (변조)
-
-  - 다른 split에서의 bandwidth 요구사항은 아래와 같이 모델링 가능
-    $$
+  
+- 다른 split에서의 bandwidth 요구사항은 아래와 같이 모델링 가능
+  $$
     R(\lambda) = k_1 \lambda + k_2 \tag{6}
     $$
-
-    - $R$ : 요구되는 link bandwidth
+  
+  - $R$ : 요구되는 link bandwidth
     - $\lambda$ : slice throughput (Mbps)
     - $k_1, k_2$ : 다른 split에 대한 특정 값을 가지는 상수 ( 다른 논문에서의 reference를 가짐 )
-
-  - latency 요구사항은 VNF 및 SR의 end-to-end latency 요구사항에 따라 다름
+  
+- latency 요구사항은 VNF 및 SR의 end-to-end latency 요구사항에 따라 다름
 
 ### C. Slice Requests
 
@@ -220,7 +219,7 @@ math: true
 - Slice와 AC의 목적 : **누적 InP 수익 최대화**
   $$
   \begin{gather*}
-  \text{ maximize } r_{total} = \sum\limits_{t \in \mathbf{T}} {T^{s_t}} * \tau ^{s_t} \\
+  \text{ maximize } r_{total} = \sum\limits_{t \in \mathbf{T}} {r^{s_t}} * \tau ^{s_t} \\
   \text{ s.t. } \quad (\text{C} 1) - (\text{C} 4), \tag{7}
   \end{gather*}
   $$
@@ -353,4 +352,8 @@ math: true
 
 ## Evaluation
 
-- 
+- 추후 정리
+- 5가지 벤치마크 존재
+  - Greedy : 모든 SR을 받고 각 VNF를 RU에서 가까운 순의 node들에게 할당하는 것
+    - 
+  - Node Ranking : 
