@@ -90,9 +90,11 @@ math: true
 
   - 각 iteration마다 실제 reward를 관찰하며, step $t$마다 $Q$함수를 최적화함
     $$
-    \begin{equation*}Q\left( {{s_t},{a_t}} \right) \leftarrow (1 - \alpha )Q\left( {{s_t},{a_t}} \right) + \alpha \left[ {{r_t} + \gamma \mathop {\max }\limits_a Q\left( {{s_{t + 1}},a} \right)} \right]\end{equation*}
+    \begin{equation*}
+    Q(s_t, a_t) \leftarrow (1 - \alpha) Q(s_t, a_t) + \alpha \left[ r_t + \gamma \max \limits _a Q(s_{t+1}, a) \right]
+  \end{equation*}
     $$
-
+    
     - $\alpha$ : learning rate // 새로 관찰된 정보가 오래된 정보를 어느정도 재정의하는가?
     - $\gamma$ : discount factor // 현재와 미래 reward 간의 균형을 맞추는 요소
 
