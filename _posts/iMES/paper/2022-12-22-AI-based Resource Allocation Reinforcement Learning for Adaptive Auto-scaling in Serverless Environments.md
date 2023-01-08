@@ -156,16 +156,16 @@ math: true
 
 - 각 iteration : agent는 service 클러스터에 concurrency update 전송, 그에 따라 **각 concurrency limit이 있는 new revision을 생성**
   - service update가 완료된 이후 : agent는 start signal을 client cluster로 전송
-  - client cluster : service cluster에 대해 병렬 request 시작 ( Vetea 사용 : HTTP request를 일정 속도로 전송할 수 있음 )
+  - client cluster : service cluster에 대해 병렬 request 시작 ( Vegeta 사용 : HTTP request를 일정 속도로 전송할 수 있음 )
     - scaling에 대한 충분한 demand와 추가 instance를 제공하기 위한 시간을 보장하기 위해, <u>30초 동안 500개의 request를 동시 전송</u>
-  - 마지막 responce를 수신한 이후 : Vetea는 request의 latency 분포, 평균 throughput, 성공 ratio 등의 **test 결과를 보고서 출력** -> <u>성능 측정값이 agent에 의해 저장됨</u>
+  - 마지막 responce를 수신한 이후 : Vegeta는 request의 latency 분포, 평균 throughput, 성공 ratio 등의 **test 결과를 보고서 출력** -> <u>성능 측정값이 agent에 의해 저장됨</u>
   - agent : 클러스터 내의 prometheus 기반 HTTP API를 통해 expose된 Knative 모니터링 구성요소로부터 metric을 크롤링
     - cluster, node, pod, container 수준의 resource 사용에 대한 추가정보를 얻을 수 있음
     - 위 data를 이용하여 concurrency update가 다음 iteration으로 proceed되도록 선택
 
 
 
-## Baseline Expeiment
+## Baseline Experiment
 
 - 다양한 concurrency limit의 영향을 결정하기 위한 실험
 - 상대적인 성능에 대한 다양한 workload를 비교하는 과정
