@@ -557,7 +557,7 @@ math: true
 
 - RAM : NSLR에게 **자원을 할당하는 것**이 목표 ( mapping, embedding )
   
-  ​	$M : G = \lbrace { F, V } \rbrace \rightarrow SN' = \lbrace { N', L' } \rbrace $
+  ​    $M : G = \lbrace { F, V } \rbrace \rightarrow SN' = \lbrace { N', L' } \rbrace $
   
   - $G = \lbrace { F, V } \rbrace $ : 라벨링되고 가중치가 부여된 무방향 그래프 ( NSL 표현 )
   

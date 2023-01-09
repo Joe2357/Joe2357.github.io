@@ -264,10 +264,10 @@ math: true
 		  $$
 		  
 		  - j번째 시간차 목표 $\text{TD}_{\text{target}, j}$
-            
+          
 			$$
             \text {TD}_{\text {target}, j} = r_{j} - \tilde {r} + V(s_{j}', \boldsymbol \omega)
-		    $$
+		  $$
 		  
 		    - 이 식에서는 평균 보상 체계 $\tilde r$를 사용했음 ( soft update를 통해 추적하는 평균 reward )
 			
@@ -282,11 +282,11 @@ math: true
 - advantage와 $\text{TD}_{\text{target}}$ 사용 목적 : policy를 평가하는 것
       
   - 알고리즘은 작동 중에 반복적으로 $\theta, \omega$를 업데이트 -> 정책 개선 시도
-      
+    
 	  $$
       \begin{align*} \boldsymbol \omega\leftarrow&\boldsymbol \omega + \alpha _{\omega } \textbf {T}\textbf {D}_{\text {target}}\odot \nabla _{\omega }V(\mathbf {s}, \boldsymbol \omega) \\ \boldsymbol \theta\leftarrow&\boldsymbol \theta + \alpha _{\theta }\nabla _\theta \min \{\mathbf {r_{t}}(\boldsymbol \theta)\odot \hat {\textbf {A}}_{\text {GAE}}, \\&\text {clip}(\mathbf {r_{t}}(\boldsymbol \theta), 1-\varepsilon, 1+\varepsilon)\odot \hat {\textbf {A}}_{\text {GAE}}\} \\&+\, \xi H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)).\end{align*}
-      $$
-      
+    $$
+    
     - $\alpha_{\omega}, \alpha_{\theta}$ : gradient descent step에서의 learning rate
       - $\epsilon$ : PPO의 cliffing ratio
       - $r_t(\theta)$ : 확률 ratio
@@ -306,7 +306,7 @@ math: true
   $$
   \begin{equation*} H(\pi (\cdot |\mathbf {s}, \boldsymbol \theta)) = -\sum _{a'\in \mathcal {A}}\pi (a' | \mathbf {s}, \boldsymbol \theta)\log {\pi (a' | \mathbf {s}, \boldsymbol \theta)}\end{equation*}
   $$
-    
+  
   - weight : $\xi$
   
 - 알고리즘 1
@@ -521,19 +521,19 @@ math: true
   // Training agent and collecting states.
   i ← 0
   for Ntrain steps do
-  	ai ← Get action from the agent in state si (based on the neural network).
-  	ri, si+1 ←  Execute action ai and get reward and the next state.
-  	Store history and Update agent using the Agent.Store and Agent.Update procedures in Algorithm 1.
-  	if i > Ntrain − Ndata then
-  		Append state to Lstates.
-  	end if
-  	i ← i + 1
+      ai ← Get action from the agent in state si (based on the neural network).
+      ri, si+1 ←  Execute action ai and get reward and the next state.
+      Store history and Update agent using the Agent.Store and Agent.Update procedures in Algorithm 1.
+      if i > Ntrain − Ndata then
+          Append state to Lstates.
+      end if
+      i ← i + 1
   end for
   i ← 0
   for Ndata steps do
-  	Evaluate DRL agent on state Lstates[i] to get action.
-  	Append action to Lacts.
-  	i ← i + 1
+      Evaluate DRL agent on state Lstates[i] to get action.
+      Append action to Lacts.
+      i ← i + 1
   end for
   Remove outlier points according to (12).
   Separate lists into train and test sets: Lstates → Ltrainstates, Lteststates; Lacts → Ltrainacts, Ltestacts.

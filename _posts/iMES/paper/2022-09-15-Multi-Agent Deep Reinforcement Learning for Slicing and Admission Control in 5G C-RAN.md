@@ -153,7 +153,7 @@ math: true
 - 다른 split에서의 bandwidth 요구사항은 아래와 같이 모델링 가능
   $$
     R(\lambda) = k_1 \lambda + k_2 \tag{6}
-    $$
+  $$
   
   - $R$ : 요구되는 link bandwidth
     - $\lambda$ : slice throughput (Mbps)

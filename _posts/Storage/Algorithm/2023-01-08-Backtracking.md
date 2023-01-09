@@ -29,12 +29,12 @@ math: true
   
   // DFS 방식 : 재귀함수로 주로 구현
   def DFS(graph, current):
-  	... make some operations with current vertex
-  	
-  	loop i = [1, N]:
-  		if 'vertex(i) was not visited' and 'there is a path from vertex(current) to vertex(i)':
-  			visit[i] <= true
-  			DFS(graph, i)
+      ... make some operations with current vertex
+      
+      loop i = [1, N]:
+          if 'vertex(i) was not visited' and 'there is a path from vertex(current) to vertex(i)':
+              visit[i] <= true
+              DFS(graph, i)
       return
   ```
 
@@ -46,16 +46,16 @@ math: true
   
   // 백트래킹 방식 : DFS 방식을 기본으로 구현
   def backtracking(graph, current):
-  	/* 조건 추가 : 유망한지 검사 */
-  	if 'not promising(current)':
-  		return
-  		
-  	... make some operations with current vertex
-  	
-  	loop i = [1, N]:
-  		if 'vertex(i) was not visited' and 'there is a path from vertex(current) to vertex(i)':
-  			visit[i] <= true
-  			backtracking(graph, i)
+      /* 조건 추가 : 유망한지 검사 */
+      if 'not promising(current)':
+          return
+          
+      ... make some operations with current vertex
+      
+      loop i = [1, N]:
+          if 'vertex(i) was not visited' and 'there is a path from vertex(current) to vertex(i)':
+              visit[i] <= true
+              backtracking(graph, i)
       return
   ```
 

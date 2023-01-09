@@ -32,8 +32,8 @@ math: true
 ```pseudocode
 // 처리 함수
 def processing(arr, start, end):
-	... get result from arr[start] to arr[end]
-	return result
+    ... get result from arr[start] to arr[end]
+    return result
 
 /* 값의 범위 */
 define N -> 40
