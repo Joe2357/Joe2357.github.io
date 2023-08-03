@@ -1,7 +1,7 @@
 ---
 title: "Edge Assisted Real-time Object Detection for Mobile Augmented Reality"
 author: Joe2357
-categories: [iMES, Review/paper]
+categories: [1. iMES, Review/paper]
 tags: [iMES, review, paper]
 math: true
 ---
