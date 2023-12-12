@@ -2,7 +2,7 @@
 title: "AI-based Resource Allocation: Reinforcement Learning for Adaptive Auto-scaling in Serverless Environments"
 author: Joe2357
 categories: [1. iMES, Review/paper]
-tags: [iMES, review, paper]
+tags: [iMES, paper]
 math: true
 ---
 

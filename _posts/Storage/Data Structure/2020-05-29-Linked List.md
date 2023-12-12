@@ -2,7 +2,7 @@
 title: "Linked List"
 author: Joe2357
 categories: [Storage, Data Structure]
-tags: [Storage, DS]
+tags: [Storage, Data Structure]
 math: true
 ---
 

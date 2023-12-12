@@ -2,7 +2,7 @@
 title: "Scaling UPF Instances in 5G/6G Core With Deep Reinforcement Learning"
 author: Joe2357
 categories: [1. iMES, Review/paper]
-tags: [iMES, review, paper]
+tags: [iMES, paper]
 math: true
 ---
 

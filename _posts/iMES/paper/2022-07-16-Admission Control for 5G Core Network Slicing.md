@@ -2,7 +2,7 @@
 title: "Admission Control for 5G Core Network Slicing Based on Deep Reinforcement Learning"
 author: Joe2357
 categories: [1. iMES, Review/paper]
-tags: [iMES, review, paper]
+tags: [iMES, paper]
 math: true
 ---
 
