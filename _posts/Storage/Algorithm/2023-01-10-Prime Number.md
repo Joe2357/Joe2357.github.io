@@ -2,7 +2,7 @@
 title: "소수 판별법"
 author: Joe2357
 categories: [Storage, Algorithm]
-tags: [Storage, Algorithm]
+tags: [Algorithm]
 math: true
 ---
 

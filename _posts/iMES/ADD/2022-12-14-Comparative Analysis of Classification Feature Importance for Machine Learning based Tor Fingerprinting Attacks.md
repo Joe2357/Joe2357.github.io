@@ -2,7 +2,7 @@
 title: "기계학습 기반 토르 핑거프린팅 공격 기술의 분류 feature 중요도 비교 분석"
 author: Joe2357
 categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
-tags: [iMES, Agency for Defense Development (ADD), paper]
+tags: [Agency for Defense Development (ADD)]
 math: true
 ---
 

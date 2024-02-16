@@ -2,7 +2,7 @@
 title: "Meet in the Middle"
 author: Joe2357
 categories: [Storage, Algorithm]
-tags: [Storage, Algorithm]
+tags: [Algorithm]
 math: true
 ---
 

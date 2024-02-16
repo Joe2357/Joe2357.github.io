@@ -2,7 +2,7 @@
 title: "Minimum Spanning Tree"
 author: Joe2357
 categories: [Storage, Algorithm]
-tags: [Storage, Algorithm]
+tags: [Algorithm]
 math: true
 ---
 

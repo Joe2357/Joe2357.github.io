@@ -9,26 +9,34 @@ order: 4
 
 
 
-- 현재 사용중인 태그
-  - Codeforces
-  - iMES
-  - paper
-  - DS ( 자료구조 )
-  - Algorithm
-  - review
-  - SCPC
-  - Storage
-  - ADD
-
-
-
 - 현재 사용중인 카테고리
+  - 1\. iMES
+    - Agency for Defense Development (ADD) / 2022-23
+    - Lab Seminar
   - Problem Solving
-    - Review/Codeforces
-    - Review/SCPC
+    - Baekjoon
+    - Codeforces
+    - SCPC
   - Storage
-    - Data Structure
     - Algorithm
-  - iMES
-    - Review/paper
-    - ADD
+    - Data Structure
+
+- 예정 카테고리
+  - 1\. iMES
+    - Electronics and Telecommunications Research Institute (ETRI) / 2023
+    - Personal Project
+
+
+
+- 현재 사용 중인 태그
+  - iMES 관련 태그
+    - `Agency for Defense Development (ADD) / 2022-23`
+  - Problem Solving 관련 태그
+    - `Baekjoon`
+    - `Contest` 하위
+      - `Codeforces`
+      - `SCPC`
+  - Storage 관련 태그
+    - `Algorithm`
+    - `Data Structure`
+
