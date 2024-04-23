@@ -6,8 +6,6 @@ tags: [Agency for Defense Development (ADD)]
 math: true
 ---
 
-# 익명 오버레이 네트워크
-
 > Anonymous Overlay Networks
 
 

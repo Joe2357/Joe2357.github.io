@@ -6,8 +6,6 @@ tags: [iMES, Agency for Defense Development (ADD), paper]
 math: true
 ---
 
-# FedFingerprinting: A Federated Learning Approach to Website Fingerprinting Attacks in Tor Networks
-
 
 
 ## Abstract
