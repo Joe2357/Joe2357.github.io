@@ -85,7 +85,7 @@ math: true
 - elasticity (탄력성) & dynamism (역동성) : cloud computing의 핵심 개념
   - 적절한 애플리케이션 scaling을 제공하는 것은 cloud 제공자의 가장 중요한 feature 중 하나!
 
-- 참고 문헌 [[8]](A review of auto-scaling techniques for elastic applications in cloud environments), [[9]](Elasticity in cloud computing: State of the art and research challenges)는 데이터 센터에서 적용되는 scaling 솔루션에 대한 포괄적인 survey를 제공
+- 참고 문헌 [[8]](https://link.springer.com/content/pdf/10.1007/s10723-014-9314-7.pdf), [[9]](https://ieeexplore.ieee.org/document/7937885)는 데이터 센터에서 적용되는 scaling 솔루션에 대한 포괄적인 survey를 제공
   - auto scaler들을 기반 이론 모델에 따라 분류
     - **Threshold-based** // 단점 : simplification (단순화) 가 scaling 성능의 제한요소가 된다고 생각
     - **Queuing model-based** // 단점 : exponential inter-arrival 시간에 대한 Markovian 가정이 제한요소라고 생각
