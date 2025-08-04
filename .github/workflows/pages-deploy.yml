@@ -59,9 +59,7 @@ jobs:
         run: |
           bundle exec htmlproofer "_site${{ steps.pages.outputs.base_path }}" \
             --checks Images,Links,Scripts \
-            --disable-external \
-            --ignore-urls '/^http:\/\/127\.0\.0\.1/,/^http:\/\/0\.0\.0\.0/,/^http:\/\/localhost/' \
-            --url-ignore 'https://u\.acmicpc\.net/.*/Screen%20Shot%20.*\.png'
+            --disable-external
         # 설명:
         #  - --config: 파일명 규칙 예외(.htmlproofer.yml) 적용
         #  - --url-ignore: 문제되는 외부 캡처 URL 패턴을 명시적으로 제외(이중 안전장치)
