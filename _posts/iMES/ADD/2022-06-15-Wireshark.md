@@ -25,7 +25,7 @@ math: true
 
 - 화면 예시
 
-  ![wireshark](./../../../assets/img/post/add/wireshark.png)
+  ![wireshark](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/add/wireshark.png?raw=true)
 
 
 
