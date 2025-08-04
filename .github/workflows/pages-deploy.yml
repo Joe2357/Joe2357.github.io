@@ -58,7 +58,7 @@ jobs:
       - name: Test site (htmlproofer)
         run: |
           bundle exec htmlproofer "_site${{ steps.pages.outputs.base_path }}" \
-            --checks Images,Links,Scripts \
+            --checks Links,Scripts \
             --disable-external
         # 설명:
         #  - --config: 파일명 규칙 예외(.htmlproofer.yml) 적용

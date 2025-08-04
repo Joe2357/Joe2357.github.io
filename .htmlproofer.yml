@@ -1,4 +1,11 @@
+# .htmlproofer.yml  (v5용)
 Checks:
   Images:
-    ignore_image_filenames:
+    # v5에서는 보통 'ignore_filenames'로 동작
+    ignore_filenames:
       - Screen Shot
+  Links:
+    ignore_urls:
+      - ^http://localhost
+      - ^http://127\.0\.0\.1
+      - ^http://0\.0\.0\.0
