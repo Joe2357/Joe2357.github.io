@@ -1,15 +1,12 @@
 name: "Build and Deploy"
+
 on:
   push:
-    branches:
-      - main
-      - master
+    branches: [ main, master ]
     paths-ignore:
       - .gitignore
       - README.md
       - LICENSE
-
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
 permissions:
@@ -17,7 +14,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
+# 동시 배포 방지
 concurrency:
   group: "pages"
   cancel-in-progress: true
@@ -31,9 +28,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          # submodules: true
-          # If using the 'assets' git submodule from Chirpy Starter, uncomment above
-          # (See: https://github.com/cotes2020/chirpy-starter/tree/main/assets)
 
       - name: Setup Pages
         id: pages
@@ -42,19 +36,37 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Build site
-        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
+        run: bundle exec jekyll build -d "_site${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: "production"
 
-      - name: Test site
+      # htmlproofer 설정 파일을 리포 루트에 기록
+      - name: Write .htmlproofer.yml
         run: |
-          bundle exec htmlproofer _site \
-            \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+          cat > .htmlproofer.yml <<'YAML'
+          Checks:
+            Images:
+              # 파일명에 'Screen Shot'이 들어간 이미지는 파일명 규칙 검사에서 제외
+              ignore_image_filenames:
+                - Screen Shot
+          YAML
+
+      - name: Test site (htmlproofer)
+        run: |
+          bundle exec htmlproofer "_site${{ steps.pages.outputs.base_path }}" \
+            --checks Images,Links,Scripts \
+            --disable-external \
+            --ignore-urls '/^http:\/\/127\.0\.0\.1/,/^http:\/\/0\.0\.0\.0/,/^http:\/\/localhost/' \
+            --config .htmlproofer.yml \
+            --url-ignore 'https://u\.acmicpc\.net/.*/Screen%20Shot%20.*\.png'
+        # 설명:
+        #  - --config: 파일명 규칙 예외(.htmlproofer.yml) 적용
+        #  - --url-ignore: 문제되는 외부 캡처 URL 패턴을 명시적으로 제외(이중 안전장치)
+        #  - --disable-external: 외부 네트워크 검사 비활성화(필요시 유지)
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3

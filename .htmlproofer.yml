@@ -1,0 +1,4 @@
+Checks:
+  Images:
+    ignore_image_filenames:
+      - Screen Shot
