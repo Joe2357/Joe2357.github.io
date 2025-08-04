@@ -61,7 +61,6 @@ jobs:
             --checks Images,Links,Scripts \
             --disable-external \
             --ignore-urls '/^http:\/\/127\.0\.0\.1/,/^http:\/\/0\.0\.0\.0/,/^http:\/\/localhost/' \
-            --config .htmlproofer.yml \
             --url-ignore 'https://u\.acmicpc\.net/.*/Screen%20Shot%20.*\.png'
         # 설명:
         #  - --config: 파일명 규칙 예외(.htmlproofer.yml) 적용
