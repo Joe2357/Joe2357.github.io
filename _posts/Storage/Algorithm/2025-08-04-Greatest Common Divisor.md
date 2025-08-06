@@ -3,10 +3,9 @@ title: "최대공약수 & 최소공배수"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+description: "- GCD & LCM"
 math: true
 ---
-
-  > GCD & LCM
 
 
 
@@ -43,7 +42,7 @@ $r=0$이 나올 때의 $b=108$이 두 수 $a=4212,~b=2484$의 최대공약수가
 ```c
 /* 재귀를 이용한 구현 */
 int gcd(int a, int b) {
-    return ((b == 0) ? (gcd(b, a % b)) : (a));
+    return ((b > 0) ? (gcd(b, a % b)) : (a));
 }
 ```
 

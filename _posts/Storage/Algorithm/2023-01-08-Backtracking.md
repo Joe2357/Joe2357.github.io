@@ -3,12 +3,13 @@ title: "Backtracking"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+description: "- 백트래킹 알고리즘"
 math: true
 ---
 
-> 백트래킹
 
-## 백트래킹이란?
+
+## 백트래킹
 
   - 탐색 과정 중 특정 상황에서 이미 해가 아니라고 판단되면, <u>그 이후를 탐색하지 않고 되돌아가서</u> 다른 해를 찾는 방법
         - **유망하다 (promising)** : 현재 탐색 중인 상황에서는 해가 될 만한 상황이 존재한다
@@ -19,7 +20,7 @@ math: true
 
 
 
-## 구현 방법
+### 구현 방법
 
 - 기존 DFS 방식
 
