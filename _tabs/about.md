@@ -11,7 +11,7 @@ toc: true
 
 ## Jaewon Jeong
 
-![my_profile](https://lh4.googleusercontent.com/RmeQI_vjr5e-KqAnFn1T578Bzh-7RmAHlwCj7fLHizPk1joaSh4PwKtrI2mzXE05WNqnn8_GD52TDq5xuGQEPYadVQlV6g5C3ZakjcDAF54EnzOuQme9kezfTHsul1VbSuBWcdzHt5RAcK9yVBCI-W0pT3wvM91NN3tAyE_p6FQaMtVJpGSLyA=w1280)
+![my_profile](https://lh5.googleusercontent.com/lHT0_qzd7ae56Yafz3oCzo3ExorDHq9Vv6vMnEn9fk5rtMAt-c1WBZF_2GFeE6QAh8rsZn0sm9CCNsQk8vC-hCS-EbAmeVaZTnk0RzVGfuUjAuLdrzTMQfjcT5hpb2GjhWmscYlHxD-8oBy75HzTa34U-vpmx2lLTFUGGSTE99W5pI824-oxTg=w1280)
 
 <center>
 Jaewon Jeong (정재원)
@@ -50,7 +50,7 @@ Jaewon Jeong (정재원)
 
 #### International Journals
 
-- <span style="color:gray">[-] Jaewon Jeong, Younghan Kim, Jungchan Cho (co-corresponding author), and Joohyung Lee (co-corresponding author), “Adaptive Memory Management with Bandit and Distillation for Heterogeneous Federated Class Incremental Learning”. [Under preparation]</span>
+- <span style="color:gray">[-] **Jaewon Jeong**, Younghan Kim, Jungchan Cho (co-corresponding author), and Joohyung Lee (co-corresponding author), “Adaptive Memory Management with Bandit and Distillation for Heterogeneous Federated Class Incremental Learning”. [Under preparation]</span>
 - [3] **Jaewon Jeong**, and Joohyung Lee (corresponding author), "Federated Reinforcement Learning Framework via Committee Mechanism for Resource Management in 5G Networks," *MDPI Sensors*, 2024. [Published (SCI/E), **Q2,** [link](https://www.mdpi.com/1424-8220/24/21/7031)]
 
 - [2] Doyeon Kim (co-first author), Seungjae Shin (co-first author), **Jaewon Jeong**, and Joohyung Lee (corresponding author), "Joint Edge Server Selection and Dataset Management for Federated Learning-enabled Mobile Traffic Prediction," *IEEE Internet of Things Journal*, 2024. [Published (SCI), **Q1,** [link](https://ieeexplore.ieee.org/document/10201864)]

@@ -62,11 +62,15 @@ VPN 네트워크는 인터넷과 같은 공용 네트워크 위에 회사 또는
 
 토르 히든서비스에서 운영된 서버를 분석하여 그 특징을 확인해보고, 기존의 연구결과를 실제 적용할 수 있는 가능성에 대해 제안함. 실제 토르서버 추적에서 사용된 기법으로 알려진 몇몇 응용 프로그램 상에서의 취약점 사례에 대해서 살펴보고, 더불어 토르 히든서비스 서버에 대한 간접적 추적기법에 해당하는 비트코인 지갑 주소를 통한 추적 기법을 제시함.
 
+
+
 #### 포렌식 수사를 위한 다크웹 데이터 수집 및 분석 방안 연구
 
 > 진필근, 포렌식 수사를 위한 다크웹 데이터 수집 및 분석 방안 연구, 2021 고려대학교 정보보호대학원
 
 기존 암호 화폐 거래를 추적하는 방법과 함께 본 연구에서 새롭게 제시한 Tracking code와 Status mode를 사용하여 다크웹 사이트 분석 사례 연구를 제시함으로써 제안한 데이터 분석 방법론이 다크웹과 표면웹 사이트를 연결하여 불법 행위가 이뤄지는 다크웹 사이트의 운영자를 식별할 수 있음을 입증함.
+
+
 
 #### Website fingerprinting: attacking popular privacy enhancing technologies with the multinomial naïve-bayes classifier
 
@@ -74,11 +78,15 @@ VPN 네트워크는 인터넷과 같은 공용 네트워크 위에 회사 또는
 
 토르에 대한 웹사이트 지문 채취 공격을 최초로 실행한 사람임. 그들은 유사성을 측정하기 위해 패킷 크기 분포와 다항식 Naimbayes 분류기를 유일한 특징으로 사용했음. 하지만, 그들은 단지 약 3%의 인식률을 얻었을 뿐으로 알려짐.
 
+
+
 #### Website fingerprinting in onion routing based anonymization networks
 
 > Panchenko, A., Niessen, L., Zinnen, A., & Engel, T. (2011, October). Website fingerprinting in onion routing based anonymization networks. In Proceedings of the 10th annual ACM workshop on Privacy in the electronic society (pp. 103-114).
 
-트래픽의 볼륨, 시간 및 방향을 기준으로 웹사이트 지문을 정의하고 지원 벡터 머신(SVM)을 분류 방법으로 활용했음. 토르의 인식률은 3%에서 54%로 크게 향상되됨.
+트래픽의 볼륨, 시간 및 방향을 기준으로 웹사이트 지문을 정의하고 지원 벡터 머신(SVM)을 분류 방법으로 활용했음. 토르의 인식률은 3%에서 54%로 크게 향상됨.
+
+
 
 #### Enhancing Tor's performance using real-time traffic classification
 
@@ -86,11 +94,15 @@ VPN 네트워크는 인터넷과 같은 공용 네트워크 위에 회사 또는
 
 실시간으로 토르의 암호화된 회로를 어플리케이션 유형별로 분류하는 기계학습 기반 접근 방식인 DiffTor를 제안했음. 각 어플리케이션 유형을 적절한 QoS 요구사항에 맞게 매핑하고 토르의 성능을 향상시키는 것이 주 목적이었음. 어니언 라우터는 네트워크 패킷으로부터 셀을 추출할 수 있기 때문에, 그들의 분류 기능에는 회로 수명, 셀 사이의 도착 시간 및 최근에 전송된 셀의 수가 포함되었음.
 
+
+
 #### A Distributed Flow Correlation Attack to Anonymizing Overlay Networks Based on Wavelet Multi-Resolution Analysis
 
 > F. Palmieri, "A Distributed Flow Correlation Attack to Anonymizing Overlay Networks Based on Wavelet Multi-Resolution Analysis," in IEEE Transactions on Dependable and Secure Computing, vol. 18, no. 5, pp. 2271-2284, 1 Sept.-Oct. 2021, doi: 10.1109/TDSC.2019.2947666.
 
 이 연구는 익명화 네트워크의 내부 및 출구 내에서 수집된 트래픽 흐름의 익명성을 제거하기 위한 새로운 전략을 제안하였음. 이는 웨이브렛 기반 다중 해상도 분석에 의해 구동되는 분산 흐름 캡처, 특성화, 상관 공격에 의존함.
+
+
 
 #### Darknet Security: A Categorization of Attacks to the Tor Network
 
@@ -98,11 +110,15 @@ VPN 네트워크는 인터넷과 같은 공용 네트워크 위에 회사 또는
 
 다크넷 환경과 관련된 공격과 관련된 다크넷 보안 주제를 조사하여 분류위협에 기초한 공격대상에 기초한 포괄적인 분류법을 제안했음. 이러한 분류법은 다크넷 환경과 관련된 사이버 공격을 식별하고 그 기능을 더 잘 이해하기 위한 특성화 체계를 나타냈음.
 
+
+
 #### Improving the defense of routing attack in TOR anonymization system
 
 > Rezaei, S. and Araghizadeh, M. A., 1398, Improving the defense of routing attack in TOR anonymization system, 6th National Congress of New Electrical and Computer Engineering of Iran with a practical view on new energies, Tehran, undefined, undefined, https: // civilica .com / doc / 923961
 
 토르의 라우팅 공격을 공격한 후 토르 네트워크 구성을 분석하여 그래프 내의 저항을 평가하고 개선된 방법을 제시했음.
+
+
 
 #### The sniper attack: Anonymously deanonymizing and disabling the Tor network
 
@@ -120,17 +136,23 @@ VPN 네트워크는 인터넷과 같은 공용 네트워크 위에 회사 또는
 
 Tor, I2P, Freenet의 기술 활용 및 Ahmia Project 등에서 사용된 수집/저장 방법을 준용하는 익명화 서비스(Tor의 Hidden Service 등)를 통해 제공되는 다크웹 콘텐츠 크롤링용 웹로봇 개발하여 다크웹 내 범죄 사이트 콘텐츠를 수집하고, 범죄에 사용된 암호화폐 등의 분석을 통한 Feature 정보, Tor 릴레이서버 라우팅 알고리즘에 따른 범죄 노드 선택 확률 연구를 통해 다크웹 이용 범죄자 프로파일링 기술 및 시스템을 개발함.
 
+
+
 #### 익명 네트워크에서 이루어지는 저작권 침해 식별 및 검증
 
 > ㈜에스씨테크원, 엘에스웨어㈜, 단국대학교 (2019.12). 저작권 보호를 위한 익명 네트워크 실명화 기술 개발 최종(연차)보고서.
 
 사용자 및 서비스 제공자의 신원을 공개하지 않는 익명 네트워크(토르) 상에서 불법적으로 콘텐츠를 공유하는 행위의 저작권 침해를 탐지하기 위하여 트래픽 핑거프린팅(Traffic Fingerprinting) (트래픽의 암호화를 풀지 않고 패킷의 흐름 패턴을 분석하여 토르 네트워크의 사용자를 알아내는 데 사용되는 기술; 클라이언트와 서버 사이의 패스 중 구성요소의 하나로 작동하여 트래픽을 분석하는 능동형 핑거프린팅 기술과, 순수하게 네트워크의 트래픽만을 분석하여 서버와 클라이언트의 토르 접속 활동을 탐지하는 수동형 핑거프린팅 기술로 나뉨) 등을 통해 사용자 및 서비스 제공자의 사이트 정보, IP 등과 같은 접속 정보를 실명화 하는 기술을 연구 개발하고 있음.
 
+
+
 #### 익명 네트워크를 통해 유포된 악성코드 분석
 
 > 한국인터넷진흥원 (2014.5). Tor 네트워크의 원리와 관련 악성코드 사례 분석.
 
 Tor를 이용해 유포된 악성코드의 경우 명령제어 서버나 악성코드 경유지, 유포지에대한 차단 및 조치가 필요하지만 정확한 서버의 위치를 알 수 없어 어렵기 때문에 모니터링을 통해 악성코드 유포에 대한 사례를 통해 기술을 분석하고 있음.
+
+
 
 #### 원자력 발전소
 
@@ -146,9 +168,14 @@ Tor를 이용해 유포된 악성코드의 경우 명령제어 서버나 악성�
 토르 라우터를 사용하면 사용 중인 네트워크와 관계없이 트래픽을 암호화하고 개인 정보를 보호할 수 있음. 발전소의 네트워크를 보호하기 위해 이러한 시스템의 장점은 아래와 같음.
 
 1. 네트워크 해킹 방지
+
 2. 최신 보안 기술로 업데이트할 수 있는 유연성
+
 3. 추적 불가능
+
 4. 군용 등급 보호
+
+   
 
 #### IoT 주소 지정 및 연결을 위한 활용
 
