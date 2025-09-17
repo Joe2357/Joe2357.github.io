@@ -14,7 +14,7 @@ math: true
 ### A. [PizzaForces](https://codeforces.com/contest/1555/problem/A)
 
 <details markdown="1"><summary>풀이 보기</summary>
-#### 풀이
+#### 풀이  
 
 생각보다 많이 꼬여있고, 많이 단순한 문제라고 생각한다.
 
@@ -61,7 +61,7 @@ int main() {
 ### B. [Two Tables](https://codeforces.com/contest/1555/problem/B)
 
 <details markdown="1"><summary>풀이 보기</summary>
-#### 풀이
+#### 풀이  
 
 별로 마음에 안드는 case work 문제이다. 따라서 문제 해설보다는 어떤 순서로 문제를 풀어나갔는가를 적으려한다.
 
@@ -138,7 +138,7 @@ int main() {
 ### C. [Coin Rows](https://codeforces.com/contest/1555/problem/C)
 
 <details markdown="1"><summary>풀이 보기</summary>
-#### 풀이
+#### 풀이  
 
 처음에는 게임이론 문제라고 생각했다. 아예 아닌 것은 아닌데, 게임이론 방법까지 생각하지는 않아도 되는 문제였다.
 
@@ -199,7 +199,7 @@ int main() {
 ### D. [Say No to Palindromes](https://codeforces.com/contest/1555/problem/D)
 
 <details markdown="1"><summary>풀이 보기</summary>
-#### 풀이
+#### 풀이  
 
 쿼리 문제이다. 최대 $2 \cdot 10^5 \times 2 \cdot 10^5$번 반복하므로 둘 중 하나를 $O(1)$에 풀어내야 한다는 점을 기억해야한다. TLE를 한번 받은 문제이다.
 
