@@ -3,6 +3,8 @@ title: "Educational Codeforces Round 112 (Rated for Div. 2) 후기"
 author: Joe2357
 categories: [Problem Solving, Codeforces]
 tags: [Contest, Codeforces]
+date: 2021-07-31 12:00:00 +0900
+last_modified_at: 2021-07-31 12:00:00 +0900
 description: "- Educational Codeforces Round 112 (Rated for Div. 2) 후기"
 math: true
 ---

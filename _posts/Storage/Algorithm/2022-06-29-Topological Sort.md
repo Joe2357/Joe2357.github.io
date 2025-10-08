@@ -3,6 +3,8 @@ title: "Topological Sort"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+date: 2022-06-29 12:00:00 +0900
+last_modified_at: 2022-06-29 12:00:00 +0900
 description: "- 위상 정렬"
 math: true
 ---
@@ -19,7 +21,7 @@ math: true
 
 ### 구현 방법
 
-#### BFS를 이용하는 방법
+#### [BFS 탐색](https://en.wikipedia.org/wiki/Breadth-first_search)을 이용하는 방법
 
 - 알고리즘 순서
 
@@ -65,7 +67,7 @@ math: true
 
 
 
-#### DFS를 이용하는 방법
+#### [DFS 탐색](https://en.wikipedia.org/wiki/Depth-first_search)을 이용하는 방법
 
 - 알고리즘 순서
 

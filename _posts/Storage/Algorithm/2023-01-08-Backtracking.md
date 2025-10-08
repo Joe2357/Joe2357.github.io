@@ -3,6 +3,8 @@ title: "Backtracking"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+date: 2023-01-08 12:00:00 +0900
+last_modified_at: 2023-01-08 12:00:00 +0900
 description: "- 백트래킹 알고리즘"
 math: true
 ---
@@ -14,7 +16,7 @@ math: true
   - 탐색 과정 중 특정 상황에서 이미 해가 아니라고 판단되면, <u>그 이후를 탐색하지 않고 되돌아가서</u> 다른 해를 찾는 방법
     - **유망하다 (promising)** : 현재 탐색 중인 상황에서는 해가 될 만한 상황이 존재한다
     - **가지치기 (pruning)** : 이미 유망하지 않은 상황이라고 판단되면 탐색하지 않는 것
-  - 주로 트리나 그래프에서 DFS 탐색을 진행할 때, 효율성을 높이기 위해서 사용
+  - 주로 트리나 그래프에서 [DFS 탐색](https://en.wikipedia.org/wiki/Depth-first_search)을 진행할 때, 효율성을 높이기 위해서 사용
       - DFS : 가능한 모든 경로를 탐색하므로, 이미 가망이 없어진 상황에서도 탐색을 진행
       - 백트래킹 : 가능한 경로를 탐색하다, 가망이 없어진 상태라면 탐색하지 않고 뒤로 되돌아감
 

@@ -3,6 +3,8 @@ title: "Bipartite Matching"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+date: 2023-01-24 12:00:00 +0900
+last_modified_at: 2023-01-24 12:00:00 +0900
 description: "- 이분 매칭 알고리즘"
 math: true
 ---
@@ -25,7 +27,7 @@ math: true
 
 #### DFS를 이용하는 방법
 
-그룹 $X$에 있는 모든 정점에 대하여 [dfs 탐색](https://en.wikipedia.org/wiki/Depth-first_search)을 이용하여 구현한다. 그룹 $X$의 노드는 그룹 $Y$의 노드 중 하나를 점유하려고 시도한다. 이 때 아래와 같은 선택지에 마주한다. 아래에서는 그룹 $X$의 노드를 $x$, 그룹 $Y$의 노드 중 현재 점유하려고 시도 중인 노드를 $y$라고 하겠다.
+그룹 $X$에 있는 모든 정점에 대하여 [DFS 탐색](https://en.wikipedia.org/wiki/Depth-first_search)을 이용하여 구현한다. 그룹 $X$의 노드는 그룹 $Y$의 노드 중 하나를 점유하려고 시도한다. 이 때 아래와 같은 선택지에 마주한다. 아래에서는 그룹 $X$의 노드를 $x$, 그룹 $Y$의 노드 중 현재 점유하려고 시도 중인 노드를 $y$라고 하겠다.
 
 - $x$는 모든 $y$에 대하여 $x$가 $y$를 점유할 수 있는지 판단
   - $x$가 점유 시도하려는 $y_i$가 현재 점유 상태가 아닌 경우

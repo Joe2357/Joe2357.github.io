@@ -3,6 +3,8 @@ title: "Wireshark"
 author: Joe2357
 categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23]
+date: 2022-06-15 12:00:00 +0900
+last_modified_at: 2022-06-15 12:00:00 +0900
 description: "- wireshark의 naive 탐색 정리"
 math: true
 ---

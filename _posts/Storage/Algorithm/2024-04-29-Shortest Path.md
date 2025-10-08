@@ -3,6 +3,8 @@ title: "최단경로 알고리즘"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+date: 2024-04-29 12:00:00 +0900
+last_modified_at: 2024-04-29 12:00:00 +0900
 description: "- 최단경로를 구하는 여러 방법들"
 math: true
 ---
@@ -47,7 +49,7 @@ for (int k = 1; k <= N; ++k) {
   - 그래프 내에서 최단경로를 찾는 알고리즘
     - 일반적으로, **시작지점이 정해져있는 경우** 유용하게 사용 가능하다 ( 시작점으로부터 다른 모든 정점들로의 최단경로를 구할 수 있음 )
     - 조건 : <u>모든 경로의 가중치는 nonnegative해야한다</u> ( 음수가 있으면 안됨 )
-  - DP를 이용하여 구현
+  - [다이나믹 프로그래밍](https://en.wikipedia.org/wiki/Dynamic_programming)을 이용하여 구현
         - 구현 원리 : $s \rightarrow e$까지의 최단거리는 "거쳐가는 다른 정점들간의 최단거리" 의 합으로 계산되기 때문
         - 즉, 하나의 최단거리를 구할 때, 이전에 계산해둔 최단거리 정보를 그대로 사용하기 때문에, dp문제로 해석할 수 있다
 
@@ -209,7 +211,7 @@ void dijkstra(int start_point) {
 
 
 
-#### 우선순위 큐 구현
+#### [우선순위 큐](https://joe2357.github.io/posts/Heap/) 구현
 
 매 반복마다 dist값이 최소인 정점을 찾기 위해서, 우리는 모든 정점에 대해 반복하며 '방문하지 않았으면서 dist가 최소인 정점'을 찾았다. 이것은 불필요한 visit 배열을 만들게 시키고, 매 반복마다 정점을 매번 확인하도록 강요한다.
 

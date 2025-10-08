@@ -3,6 +3,8 @@ title: "Segment Tree"
 author: Joe2357
 categories: [Storage, Data Structure]
 tags: [Data Structure]
+date: 2023-03-23 12:00:00 +0900
+last_modified_at: 2023-03-23 12:00:00 +0900
 description: "- 세그먼트 트리 / 느리게 갱신되는 세그먼트 트리"
 math: true
 ---

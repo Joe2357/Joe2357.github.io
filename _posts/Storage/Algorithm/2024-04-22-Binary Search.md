@@ -3,6 +3,8 @@ title: "Binary Search"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
+date: 2024-04-22 12:00:00 +0900
+last_modified_at: 2024-04-22 12:00:00 +0900
 description: "- 이진 탐색 / 이분 탐색"
 math: true
 ---
@@ -49,7 +51,7 @@ int binary_search(int left, int right, int value) {
 
 이진 탐색 알고리즘은 정렬되어있는 리스트에서 **특정 값**이 어디에 존재하는가를 찾아내는 알고리즘이라고 하였다. 아래의 알고리즘들은 한 단계 더 나아가서 특정 조건을 만족하는 위치를 찾는 알고리즘이 되겠다.
 
-### 1. Lower Bound
+### Lower Bound
 
 lower bound 함수는 찾으려는 값 **이상**이 처음 나타나는 위치를 찾는 알고리즘이다. 똑같은 원소가 여러개 있어도 상관없이 가장 첫 위치를 나타낸다.
 
@@ -89,7 +91,7 @@ int main() {
 }
 ```
 
-### 2. Upper bound
+### Upper bound
 
 upper bound 함수는 찾으려는 값 **초과**가 처음 나타나는 위치를 찾는 알고리즘이다. 똑같은 원소가 여러개 있어도 상관없이 가장 첫 위치를 나타낸다.
 

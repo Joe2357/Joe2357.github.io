@@ -3,6 +3,8 @@ title: "FedFingerprinting: A Federated Learning Approach to Website Fingerprinti
 author: [j.Bang, Joe2357, j17.lee]
 categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23, Publication]
+date: 2023-07-26 12:00:00 +0900
+last_modified_at: 2023-07-26 12:00:00 +0900
 description: "- Published in IEEE Access (Vol.11)"
 math: true
 ---

@@ -3,6 +3,8 @@ title: "Educational Codeforces Round 182 (Rated for Div. 2) 후기"
 author: Joe2357
 categories: [Problem Solving, Codeforces]
 tags: [Contest, Codeforces]
+date: 2025-09-16 12:00:00  +0900
+last_modified_at: 2025-09-16 12:00:00  +0900
 description: "- Educational Codeforces Round 182 (Rated for Div. 2) 후기"
 math: true
 ---
@@ -15,7 +17,9 @@ math: true
 
 <details markdown="1"><summary>풀이 보기</summary>
 #### 풀이  
-A번 문제답에 브루트포스로 풀리는 문제였다. 가능한 모든 $l$, $r$에 대해서 각 구간들의 원소의 합을 계산하고 문제 조건에 맞도록 **모두 다르거나 모두 같은 갯수**를 세면 되는 문제였다.
+
+
+A번 문제답게 브루트포스로 풀리는 문제였다. 가능한 모든 $l$, $r$에 대해서 각 구간들의 원소의 합을 계산하고 문제 조건에 맞도록 **모두 다르거나 모두 같은 갯수**를 세면 되는 문제였다.
 
 혹시 몰라 누적합 방법을 사용하여 각 구간의 원소의 합을 계산하는 과정을 $O(1)$에 계산하는 것까지 추가했다. 아마 안해도 큰 문제는 없었을 것 같긴 하다.
 

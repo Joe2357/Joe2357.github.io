@@ -3,6 +3,8 @@ title: "Linked List"
 author: Joe2357
 categories: [Storage, Data Structure]
 tags: [Data Structure]
+date: 2020-05-29 12:00:00 +0900
+last_modified_at: 2020-05-29 12:00:00 +0900
 description: "- 연결리스트"
 math: true
 ---
