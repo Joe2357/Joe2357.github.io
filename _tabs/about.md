@@ -11,7 +11,7 @@ toc: true
 
 ## Jaewon Jeong
 
-![my_profile]("https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/ID.jpg")
+![my_profile](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/ID.jpg?raw=true)
 
 <center>
 Jaewon Jeong (정재원)
