@@ -4,7 +4,7 @@ author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
 date: 2024-04-29 12:00:00 +0900
-last_modified_at: 2024-04-29 12:00:00 +0900
+last_modified_at: 2025-10-09 20:36:00 +0900
 description: "- 최단경로를 구하는 여러 방법들"
 math: true
 ---
@@ -157,41 +157,31 @@ $$
 #### 구현 예시
 
 ```c
-void dijkstra(int start_point) {
-    /* dist init */
-    for (int i = 1; i <= n; ++i) {
-        if (i == start_point) {
-            dist[i] = 0;
-        } else {
-            dist[i] = INF;
-        }
-        visit[start_point] = false;
-    }
+void dijkstra() {
+    distance[start_point] = 0;
 
-    /* loop until all vertex were choosed */
-    int current_vertex;
-    while (true) {
-        current_vertex = 0;
-        for (int i = 1; i <= n; ++i) {
-            if (visit[i] == false && dist[i] < dist[current_vertex]) {
-                current_vertex = i;
+    // Step 1. 방문하지 않은 노드들 중 dist가 제일 작은 노드 탐색 
+    for (int i = 1; i <= n; i++) {
+        int min_distance = INF;
+        int min_idx = -1;
+        for (int j = 1; j <= n; j++) {
+            if (visit[j] == false && distance[j] < min_distance) {
+                min_distance = distance[j];
+                min_idx = j;
             }
         }
-        if (current_vertex == 0) {    // no more vertex left
+        if (min_idx == -1) {
             break;
         }
-        visit[current_vertex] = true;
+        visit[min_idx] = true;
 
-        /* modify all dist values */
-        for (int i = 1; i <= n; ++i) {
-            if (path[current_vertex][i] < INF) {
-                if (dist[i] > dist[current_vertex] + path[current_vertex][i]) {
-                    dist[i] = dist[current_vertex] + path[current_vertex][i];
-                }
+        // Step 2. 방문 가능한 모든 노드들에 대해 dist 업데이트
+        for (int j = 1; j <= n; j++) {
+            if (visit[j] == false && grid[min_idx][j] != INF) {
+                distance[j] = min(distance[j], distance[min_idx] + grid[min_idx][j]);
             }
         }
     }
-
     return;
 }
 ```
@@ -204,7 +194,7 @@ void dijkstra(int start_point) {
 
 정점의 개수가 적을 때에는 인접 행렬 방법으로 간선을 기록해도 메모리나 시간상 문제가 생기지는 않는다. 하지만 정점의 개수가 많아지면 인접 행렬로 그래프를 표현하기에는 시간, 메모리 문제가 발생한다.
 
-인접 행렬을 인접 리스트 방식으로 구현하는 방법이 있다. 인접행렬에서 인접리스트로 바꾸면 이점이 많다.
+인접 행렬을 [연결리스트](https://joe2357.github.io/posts/Linked-List/) 방식으로 구현하는 방법이 있다. 인접행렬에서 인접리스트로 바꾸면 이점이 많다.
 
 - 칸의 크기를 줄일 수 있다. 정점이 $N$개라면 인접행렬은 $N^2$개의 칸이 필요하다. 인접리스트는 간선의 개수 $E$개만큼 칸이 필요하다. 하지만 리스트의 head를 따로 저장해야하고, 리스트의 칸은 일반 배열의 칸보다 더 많은 변수(next 등) 를 기록해야하므로, 실질적으로 메모리 이득을 보기 위해서는 $E \times 2 < N$인 경우일 것. 그래도 $N$이 크다면 인접 리스트를 고려해야한다
 - dist 배열을 modify할 때 탐색 횟수를 줄일 수 있다. 시간복잡도가 크게 향상되는 부분 중 하나. 위의 시나리오에서는 A를 선택했을 때 $B, C, D, E$를 모두 확인하며 간선이 있는지 확인했지만, 인접리스트로 구현한다면 $A$와 연결되어있는 정점들을 한눈에 확인 가능하다
@@ -213,7 +203,7 @@ void dijkstra(int start_point) {
 
 #### [우선순위 큐](https://joe2357.github.io/posts/Heap/) 구현
 
-매 반복마다 dist값이 최소인 정점을 찾기 위해서, 우리는 모든 정점에 대해 반복하며 '방문하지 않았으면서 dist가 최소인 정점'을 찾았다. 이것은 불필요한 visit 배열을 만들게 시키고, 매 반복마다 정점을 매번 확인하도록 강요한다.
+매 반복마다 dist값이 최소인 정점을 찾기 위해서, 우리는 모든 정점에 대해 반복하며 **방문하지 않았으면서 `dist`가 최소인 정점**을 찾았다. 이것은 불필요한 `visit` 배열을 만들고 매 반복마다 모든 정점을 확인하도록 강요한다.
 
 dist값에 대한 우선순위 큐를 만들게 되면 매 반복마다 $O(N)$이었던 최소정점 찾기가 $O(\log N)$으로 줄어들 수 있다. 이 부분 또한 시간복잡도를 매우 크게 줄일 수 있는 부분.
 
@@ -222,26 +212,20 @@ dist값에 대한 우선순위 큐를 만들게 되면 매 반복마다 $O(N)$�
 #### 개선안
 
 ```c
-void dijkstra(int s) {
-    for (int i = 1; i <= n; ++i) {
-        if (i == s) {
-            ret[i] = 0;
-        } else {
-            ret[i] = INF;
-        }
-        push((ND){i, ret[i]});
-    }
+void dijkstra() {
+    distance[start_point] = 0;
+    heap_push((HeapNode){start_point, 0});
 
-    while (top > 0) {
-        ND cur = pop();
-        if (cur.dist <= ret[cur.idx]) {
-            for (int i = 1; i <= n; ++i) {
-                if (grid[cur.idx][i] < INF) {
-                    if (ret[i] > cur.dist + grid[cur.idx][i]) {
-                        ret[i] = cur.dist + grid[cur.idx][i];
-                        push((ND){i, ret[i]});
-                    }
-                }
+    while (isHeapEmpty() == false) {
+        HeapNode cur = heap_pop();
+        if (cur.dist > distance[cur.idx_point]) {
+            continue;
+        }
+
+        for (GridNode* curr = LinkedListMap[cur.idx_point]; curr != NULL; curr = curr->next) {
+            if (distance[curr->idx_point] > distance[cur.idx_point] + curr->edge_weight) {
+                distance[curr->idx_point] = distance[cur.idx_point] + curr->edge_weight;
+                heap_push((HeapNode){curr->idx_point, distance[curr->idx_point]});
             }
         }
     }

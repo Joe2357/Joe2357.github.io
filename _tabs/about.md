@@ -11,7 +11,7 @@ toc: true
 
 ## Jaewon Jeong
 
-![my_profile](https://lh5.googleusercontent.com/lHT0_qzd7ae56Yafz3oCzo3ExorDHq9Vv6vMnEn9fk5rtMAt-c1WBZF_2GFeE6QAh8rsZn0sm9CCNsQk8vC-hCS-EbAmeVaZTnk0RzVGfuUjAuLdrzTMQfjcT5hpb2GjhWmscYlHxD-8oBy75HzTa34U-vpmx2lLTFUGGSTE99W5pI824-oxTg=w1280)
+![my_profile]("https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/ID.jpg")
 
 <center>
 Jaewon Jeong (정재원)
@@ -62,7 +62,7 @@ Jaewon Jeong (정재원)
 
 #### Domestic Journals & Conferences (Selected)
 
-- [2] **정재원**, 이주형, "양자암호 네트워크 라우팅에서 효율성과 공정성의 균형을 위한 가중 다목적 최적화 기법", 한국통신학회 2025년도 하계학술대회, 2025.05. [Accepted]
+- [2] **정재원**, 이주형, "양자암호 네트워크 라우팅에서 효율성과 공정성의 균형을 위한 가중 다목적 최적화 기법", 한국통신학회 2025년도 하계학술대회, 2025.05. [Published]
 - [1] **정재원**, 방준석, 이주형, "기계학습 기반 토르 핑거프린팅 공격 기술의 분류 feature 중요도 비교 분석", 대한전자공학회 전자공학회지, 2022.12. [Published]
 
 #### Patents (Selected)
