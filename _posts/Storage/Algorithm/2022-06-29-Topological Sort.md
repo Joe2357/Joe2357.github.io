@@ -3,7 +3,7 @@ title: "Topological Sort"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2022-06-29 12:00:00 +0900
+uploaded_at: 2022-06-29 12:00:00 +0900
 last_modified_at: 2022-06-29 12:00:00 +0900
 description: "- 위상 정렬"
 math: true

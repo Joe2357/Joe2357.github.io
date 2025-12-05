@@ -3,7 +3,7 @@ title: "Educational Codeforces Round 182 (Rated for Div. 2) 후기"
 author: Joe2357
 categories: [Problem Solving, Codeforces]
 tags: [Contest, Codeforces]
-date: 2025-09-16 12:00:00  +0900
+uploaded_at: 2025-09-16 12:00:00  +0900
 last_modified_at: 2025-09-16 12:00:00  +0900
 description: "- Educational Codeforces Round 182 (Rated for Div. 2) 후기"
 math: true

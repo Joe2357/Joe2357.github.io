@@ -1,15 +1,17 @@
 ---
 title: "Wireshark"
 author: Joe2357
-categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
+categories: [iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23]
-date: 2022-06-15 12:00:00 +0900
+uploaded_at: 2022-06-15 12:00:00 +0900
 last_modified_at: 2022-06-15 12:00:00 +0900
-description: "- wireshark의 naive 탐색 정리"
+description: "- Wireshark의 개괄적 탐색 정리"
 math: true
 ---
 
 
+
+## Wireshark
 
 - pcap을 이용하여 패킷을 잡아내는 **오픈소스 패킷 분석 프로그램**
 
@@ -32,7 +34,7 @@ math: true
 
 
 
-## 패킷 정보
+### 패킷 정보
 
 - 패킷 정보에 대한 용어 설명
   - No. : 패킷을 수집한 순서
@@ -49,7 +51,7 @@ math: true
 
 
 
-## 패킷 필터링
+### 패킷 필터링
 
 - 수집 문제점 : **들어오고 나가는 모든 패킷이 수집되고 있음**
 - 필터링 방식
@@ -65,7 +67,7 @@ math: true
   - `tcp.port == 3306` : TCP 출발지나 목적지 port로 검색
   - `ip.src != 10.1.2.3` : 출발지 ip 주소가 해당 ip 주소가 아닌 것으로 검색
   - `eth.dst == 00:3f:1e:00:00:23` : 목적지의 MAC 주소로 검색
-- 패킷들을 세션별로 조립해서 내용을 확인할 수도 있음 ( TODO : <u>아직 해보지 못했음</u> )
+- 패킷들을 세션별로 조립해서 내용을 확인할 수도 있음
 
 
 

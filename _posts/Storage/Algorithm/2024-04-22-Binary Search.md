@@ -3,7 +3,7 @@ title: "Binary Search"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2024-04-22 12:00:00 +0900
+uploaded_at: 2024-04-22 12:00:00 +0900
 last_modified_at: 2024-04-22 12:00:00 +0900
 description: "- 이진 탐색 / 이분 탐색"
 math: true

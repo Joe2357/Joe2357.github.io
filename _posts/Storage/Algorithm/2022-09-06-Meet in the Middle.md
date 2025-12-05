@@ -3,7 +3,7 @@ title: "Meet in the Middle"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2022-09-06 12:00:00 +0900
+uploaded_at: 2022-09-06 12:00:00 +0900
 last_modified_at: 2022-09-06 12:00:00 +0900
 description: "- 중간에서 만나기"
 math: true

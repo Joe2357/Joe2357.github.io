@@ -3,7 +3,7 @@ title: "Disjoint Set"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2023-03-20 12:00:00 +0900
+uploaded_at: 2023-03-20 12:00:00 +0900
 last_modified_at: 2023-03-20 12:00:00 +0900
 description: "- 분리 집합 / 유니온-파인드"
 math: true

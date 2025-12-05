@@ -8,11 +8,16 @@
 
 - type: email
   icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+  noblank: false
+
+- type: ORCID
+  icon: "fab fa-orcid"
+  noblank: false
+  url: "https://orcid.org/0009-0002-2990-185X" # Fill with your Discord profile link
 
 - type: discord
   icon: "fab fa-discord"
-  noblank: false # open link in current tab
+  noblank: false
   url: "https://discord.com/users/joe2357" # Fill with your Discord profile link
 
 # - type: rss

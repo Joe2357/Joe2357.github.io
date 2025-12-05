@@ -1,9 +1,9 @@
 ---
 title: "기계학습 기반 토르 핑거프린팅 공격 기술의 분류 feature 중요도 비교 분석"
 author: [Joe2357, j.Bang, j17.lee]
-categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
+categories: [iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23, Publication]
-date: 2022-12-14 12:00:00 +0900
+published_at: 2022-12-14 12:00:00 +0900
 last_modified_at: 2022-12-14 12:00:00 +0900
 description: "- Published in 대한전자공학회 전자공학회논문지 (Vol.60 No.1)"
 math: true

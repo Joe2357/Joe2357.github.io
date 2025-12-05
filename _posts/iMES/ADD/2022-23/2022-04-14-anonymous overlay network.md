@@ -1,9 +1,9 @@
 ---
 title: "익명 오버레이 네트워크"
 author: Joe2357
-categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
+categories: [iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23]
-date: 2022-04-14 12:00:00 +0900
+uploaded_at: 2022-04-14 12:00:00 +0900
 last_modified_at: 2022-04-14 12:00:00 +0900
 description: "- Anonymous Overlay Networks"
 math: true

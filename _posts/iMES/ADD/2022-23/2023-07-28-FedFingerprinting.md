@@ -1,10 +1,10 @@
 ---
 title: "FedFingerprinting: A Federated Learning Approach to Website Fingerprinting Attacks in Tor Networks"
 author: [j.Bang, Joe2357, j17.lee]
-categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
+categories: [iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23, Publication]
-date: 2023-07-26 12:00:00 +0900
-last_modified_at: 2023-07-26 12:00:00 +0900
+published_at: 2023-07-28 00:00:00 +0900
+last_modified_at: 2023-07-28 00:00:00 +0900
 description: "- Published in IEEE Access (Vol.11)"
 math: true
 ---
@@ -19,7 +19,7 @@ math: true
     - WF에 대한 이전 접근방식은 다양한 Tor 노드에서의 전체 데이터가 수집되어 모델을 생성하는 **중앙집중식 학습**이 필요함
       - 그러나 훈련 데이터셋에는 Tor 노드들이 공유하기를 원하지 않는 중요정보가 포함될 수 있음
     - 중앙집중식 학습은 중앙서버의 연산 및 네트워크 병목현상을 유발하게 됨
-- Tor 노드가 본인의 데이터셋을 노출하지 않으면서 global model을 생성할 수 있는 **WF의 새로운 프레임워크** 제안
+  -  Tor 노드가 본인의 데이터셋을 노출하지 않으면서 global model을 생성할 수 있는 **WF의 새로운 프레임워크** 제안
   - Federated Learning (FL) 과정에서 선택된 Tor 노드들의 local training의 부담을 덜어주기 위해 머신러닝의 앙상블 기법을 활용하여 feature들의 중요성을 분석하고 평가
   - 정확도와 학습시간의 균형을 맞추기 위해, raw data 말고 중요도 순으로 나열된 최상위 feature들의 조합을 활용할 수 있는 FL 기법을 통해 학습
   - 각 Tor 노드의 local model 정확도를 고려하여 FL process를 위한 효과적인 Tor 노드 선택 알고리즘 설계
@@ -32,7 +32,7 @@ math: true
 
 - Onion Router (Tor) : 익명으로 인터넷을 탐색할 수 있는 사실상 가장 유망한 도구 중 하나
   - Onion 프로토콜 : 무작위로 선택된 3개의 **중간 Tor 노드**를 통해 사용자로부터 서버로의 <u>암호화된 회로</u>를 생성 // 중간 노드 (relay) 가 통신의 시작점 (source) 와 도착점 (destination) 을 모두 알 수 없도록 하는 개인정보 보호 방법
-  - 다양한 연구에서 다양한 접근 방식을 통해 Tor 네트워크가 제공하는 프라이버스를 공격하려고 시도
+  - 다양한 연구에서 다양한 접근 방식을 통해 Tor 네트워크가 제공하는 프라이버시를 공격하려고 시도
     - Website Fingerprinting 공격 (WF)
     - Multiplication 공격
     - Intersection 공격

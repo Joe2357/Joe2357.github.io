@@ -3,7 +3,7 @@ title: "Bipartite Matching"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2023-01-24 12:00:00 +0900
+uploaded_at: 2023-01-24 12:00:00 +0900
 last_modified_at: 2023-01-24 12:00:00 +0900
 description: "- 이분 매칭 알고리즘"
 math: true

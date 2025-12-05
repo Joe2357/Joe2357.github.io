@@ -1,12 +1,12 @@
 Joe2357:
   name: Joe2357
   twitter: <twitter_of_author>
-  url: "https://Joe2357.github.io"
+  url: "https://Joe2357.github.io/about"
 
 j17.lee:
   name: "Joohyung Lee"
   twitter: <twitter_of_author>
-  url: "https://sites.google.com/view/imesLab"
+  url: "https://sites.google.com/view/imeslab/professor"
 
 j.Bang:
   name: "Juneseok Bang"
@@ -22,3 +22,8 @@ s.Shin:
   name: "Seungjae Shin"
   twitter: <twitter_of_author>
   url: "https://ksp.etri.re.kr/ksp/user/4f537e44-06fe-4f33-8b08-2453b1b8f997"
+  
+etc:
+  name: etc.
+  twitter: <twitter_of_author>
+  url: ""

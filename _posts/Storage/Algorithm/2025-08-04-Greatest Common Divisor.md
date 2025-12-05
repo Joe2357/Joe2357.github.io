@@ -3,7 +3,7 @@ title: "최대공약수 & 최소공배수"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2025-08-04 12:00:00 +0900
+uploaded_at: 2025-08-04 12:00:00 +0900
 last_modified_at: 2025-08-04 12:00:00 +0900
 description: "- GCD & LCM"
 math: true

@@ -3,7 +3,7 @@ title: "소수 판별법"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2023-01-10 12:00:00 +0900
+uploaded_at: 2023-01-10 12:00:00 +0900
 last_modified_at: 2023-04-14 12:00:00 +0900
 description: "- 소수를 판별하는 여러 방법들"
 math: true
@@ -133,7 +133,7 @@ bool isPrime[MAX_IDX];
 void main() {
     for (int i = 2; i < MAX_IDX; ++i) {
         if (isPrime[i] == true) {
-            for (int j = i * 2; j < MAX_IDX; j += i) {
+            for (int j = i * i; j < MAX_IDX; j += i) {
                 isPrime[j] = false;
             }
         }
@@ -142,8 +142,8 @@ void main() {
 }
 ```
 
-- 시간 복잡도 : $O(N^2)$
-- 다만 범위 내의 수에 대한 소수 판별을 모두 할 수 있다는 장점이 있음
+- 시간 복잡도 : $O(N \log{\log{N}})$
+- 범위 내의 수에 대한 소수 판별을 모두 할 수 있다는 장점이 있음
 
 
 

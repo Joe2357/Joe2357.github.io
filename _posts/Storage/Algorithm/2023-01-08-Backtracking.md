@@ -3,7 +3,7 @@ title: "Backtracking"
 author: Joe2357
 categories: [Storage, Algorithm]
 tags: [Algorithm]
-date: 2023-01-08 12:00:00 +0900
+uploaded_at: 2023-01-08 12:00:00 +0900
 last_modified_at: 2023-01-08 12:00:00 +0900
 description: "- 백트래킹 알고리즘"
 math: true

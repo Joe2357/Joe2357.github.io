@@ -1,9 +1,9 @@
 ---
 title: "익명 오버레이 네트워크 공격 관련 선행연구"
 author: Joe2357
-categories: [1. iMES, Agency for Defense Development (ADD) / 2022-23]
+categories: [iMES, Agency for Defense Development (ADD) / 2022-23]
 tags: [Agency for Defense Development (ADD) / 2022-23]
-date: 2022-09-02 12:00:00 +0900
+uploaded_at: 2022-09-02 12:00:00 +0900
 last_modified_at: 2022-09-02 12:00:00 +0900
 description: "- 선행연구 분석 및 체계 정리"
 math: true
