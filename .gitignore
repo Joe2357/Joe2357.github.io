@@ -1,7 +1,6 @@
 # Bundler cache
 .bundle
 vendor
-Gemfile.lock
 
 # Jekyll cache
 .jekyll-cache
@@ -28,3 +27,6 @@ assets/js/dist
 
 # bash command
 run_jekyll.bat
+
+# not processed files
+/_posts/Problem Solving/Baekjoon/TODO
