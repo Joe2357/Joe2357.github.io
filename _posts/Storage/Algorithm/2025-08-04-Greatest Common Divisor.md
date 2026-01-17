@@ -20,7 +20,7 @@ math: true
 
 ### 구현 방법
 
-[유클리드 호제법](https://en.wikipedia.org/wiki/Euclidean_algorithm)을 통해 구현한다.
+[유클리드 호제법](https://joe2357.github.io/posts/Euclidean-Algorithm/)을 통해 구현한다.
 
 > 두 양의 정수 $a, b~(a > b)$ 에 대하여, $a = bq + r~(0 \leq r < b)$이라 하면, $a,b$의 최대공약수는 $b,r$의 최대공약수와 같다. 즉, $\text{gcd}(a, b) = \text{gcd}(b, r)$.  
 > 이 때 $r=0$이라면 $a,b$의 최대공약수는 $b$가 된다.
