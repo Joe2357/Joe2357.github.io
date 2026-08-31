@@ -178,7 +178,7 @@ math: true
   - 마지막 1주는 test data
   - experiment를 50회 반복
 
-![figure1](./assets/figure1.png)
+![figure1](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure1.png?raw=true)
 
 - Fig. 1(a)
   - 각 client가 전체 local data의 10%에서 90%까지 사용하는 상황을 실험
@@ -201,7 +201,7 @@ math: true
 
 **Distributed NWDAF-Based FL Architecture**
 
-![figure2](./assets/figure2.png)
+![figure2](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure2.png?raw=true)
 
 - 전체 system은 centralized Core Network와 여러 MEC server로 구성
   - MEC server 집합 : $\mathsf{K}$
@@ -505,7 +505,7 @@ $$
 
 ### C. Proposed Genetic-Based Heuristic Algorithm
 
-![figure3](./assets/figure3.png)
+![figure3](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure3.png?raw=true)
 
 **Chromosome and Fitness Design**
 
@@ -621,7 +621,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
   - $\gamma_s = 0.6$
   - $\gamma_d = 0.7$
 
-![figure4](./assets/figure4.png)
+![figure4](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure4.png?raw=true)
 
 - Fig. 4(a) Total Cost
   - proposed framework가 모든 MEC server 수 설정에서 가장 낮은 total cost 달성
@@ -665,7 +665,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
 
 **Prediction Result**
 
-![figure5](./assets/figure5.png)
+![figure5](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure5.png?raw=true)
 
 - Fig. 5는 Milano와 Trento에서 ground truth와 각 방식의 prediction curve를 비교
 - proposed framework를 FedAvg와 FedDA 위에 적용해도 baseline과 거의 유사한 traffic trend를 예측
@@ -684,7 +684,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
 
 **Convergence Performance**
 
-![figure6](./assets/figure6.png)
+![figure6](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure6.png?raw=true)
 
 - R-squared score를 communication round에 따라 비교
 - Milano
@@ -697,7 +697,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
 
 **Cost Effectiveness**
 
-![figure7](./assets/figure7.png)
+![figure7](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure7.png?raw=true)
 
 - 전체 participation을 사용하는 FedAvg / FedDA 대비
   - MEC server participation ratio : 100% → 66%
@@ -709,7 +709,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
 
 **Influence of Priority and Minimum Participation Ratio**
 
-![figure8](./assets/figure8.png)
+![figure8](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure8.png?raw=true)
 
 **Traffic Pattern Priority**
 
@@ -730,7 +730,7 @@ Algorithm 2 Proposed Genetic-Based Heuristic Algorithm
 
 **Influence of Energy Preference $\beta_E$**
 
-![figure9](./assets/figure9.png)
+![figure9](https://github.com/Joe2357/Joe2357.github.io/blob/main/assets/img/post/publication/joint_edge_server_selection_and_dataset_management/figure9.png?raw=true)
 
 - $\beta_E$가 증가하면 objective에서 energy term의 weight가 커짐
 - Fig. 9(a)
