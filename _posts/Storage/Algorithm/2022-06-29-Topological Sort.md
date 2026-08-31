@@ -21,7 +21,7 @@ math: true
 
 ### 구현 방법
 
-#### [BFS 탐색](https://en.wikipedia.org/wiki/Breadth-first_search)을 이용하는 방법
+#### [BFS 탐색](https://joe2357.github.io/posts/Graph-Traversal/#bfs-breadth-first-search-너비-우선-탐색/)을 이용하는 방법
 
 - 알고리즘 순서
 
@@ -67,7 +67,7 @@ math: true
 
 
 
-#### [DFS 탐색](https://en.wikipedia.org/wiki/Depth-first_search)을 이용하는 방법
+#### [DFS 탐색](https://joe2357.github.io/posts/Graph-Traversal/#dfs-depth-first-search-깊이-우선-탐색/)을 이용하는 방법
 
 - 알고리즘 순서
 
